@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peminjaman Kendaraan</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <div class="content-wrapper">
+    <div class="col-md-12">
+        <br><h1 class="text-center">eCarRental - Delivery Cars For You Need</h1><br>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarColor03">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Project2_Kelompok4.html">Home<span class="visually-hidden"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Produk.html">Produk & Layanan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Booking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Berita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tentang Kami</a>
+                        </li>
+                        </ul>
+                        <form class="d-flex">
+                          <input class="form-control me-sm-2" type="search" placeholder="Search">
+                        </form>
+                        <a class="nav-link active" href="#">Login
+                            <span class="visually-hidden"></span>
+                        </a>
+                </div>
+            </div>
+        </nav>
+    </div> 
+</div>
+
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="dist/img/logomobil-removebg-preview.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">eCarRental</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Ahmad Admin</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Starter Pages
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Active Page</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Inactive Page</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Simple Link
+                <span class="right badge badge-danger">New</span>
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Kelola Kendaraan</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Kelola Kendaraan</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8">
+            <form role="form">
+                <div class="form-group row">
+                  <label for="text" class="col-4 col-form-label">Nama Kendaraan :</label> 
+                  <div class="col-8">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+
+                      </div> 
+                      <input id="text" name="text" type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="select" class="col-4 col-form-label">Kategori :</label> 
+                  <div class="col-8">
+                    <select id="select" name="select" class="custom-select">
+                      <option value="bus wisata">Bus Wisata</option>
+                      <option value="avanza">Minibus Keluarga</option>
+                      <option value="sport">Sedan Eksekutif</option>
+                      <option value="sport">Mobil Ekspedisi</option>
+                    </select>
+                  </div>
+                </div> 
+                <div class="form-group row">
+                </div>
+                  <div class="form-group row">
+                    <label for="textarea" class="col-4 col-form-label">Deskripsi Kendaraan :</label> 
+                    <div class="col-8">
+                      <textarea id="textarea" name="textarea" cols="40" rows="5" class="form-control"></textarea>
+                    </div>
+                  </div> 
+                  <div class="form-group row">
+                  </div>
+                <div class="form-group row">
+                  <label class="col-4">Fasilitas Kendaraan</label> 
+                  <div class="col-8">
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input name="checkbox" id="checkbox_0" type="checkbox" class="custom-control-input" value="rabbit"> 
+                      <label for="checkbox_0" class="custom-control-label">Sound System</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input name="checkbox" id="checkbox_1" type="checkbox" class="custom-control-input" value="duck"> 
+                      <label for="checkbox_1" class="custom-control-label">Wifi</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input name="checkbox" id="checkbox_2" type="checkbox" class="custom-control-input" value="fish"> 
+                      <label for="checkbox_2" class="custom-control-label">TV</label>
+                    </div>
+                  </div>
+                </div> 
+                <div class="form-group row">
+                </div>
+                <div class="form-group row">
+                  <label for="text" class="col-4 col-form-label">Kapasitas :</label> 
+                  <div class="col-8">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+
+                      </div> 
+                      <input id="text" name="text" type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="text" class="col-4 col-form-label">Merk Kendaraan :</label> 
+                  <div class="col-8">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+
+                      </div> 
+                      <input id="text" name="text" type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                <button type="submit" class="btn btn-primary">
+                    Simpan
+                </button>
+                </div>
+
+            </form>
+            
+        </div>
+
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+    <div class="p-3">
+      <h5>Title</h5>
+      <p>Sidebar content</p>
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+      Anything you want
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</body>
+</html>
