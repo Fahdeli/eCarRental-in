@@ -4,32 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Login</title>
+    <title>Formulir Daftar Kendaraan</title>
     <style>
       
       .wrapp {
         background: rgb(28, 27, 49);
-        margin: 30px auto;
-        max-width: 400px;
+        margin: 50px auto;
+        max-width: 700px;
         width: 100%;
         box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
-        padding: 30px;
+        padding: 50px;
         border-radius: 10px;
       }
 
-      .wrapp .title {
-        font-size: 20px;
-        font-weight: 700;
-        text-align: center;
-        text-transform: uppercase;
-        margin-bottom: 25px;
-        color: #1e4bfc;
-
-      }
-
       legend {
-        font-size: 35px;
-        font-weight: 900;
+        font-size: 28px;
+        font-weight: 700;
+        text-transform: uppercase;
         text-align: center;
         margin-bottom: 25px;
       }
@@ -60,19 +51,28 @@
 
 <form>
   <fieldset>
-    <legend>EcarRental</legend>
+    <legend>Form Formulir</legend>
   <div class="wrapp">
-    <div class="title">Login</div>
     <div class="form">
       <div class="inputfield">
-        <input id="text" name="text" type="text" class="form-control" placeholder="Username">
+        <label for="text" class="col-4 col-form-label">Nama Kendaraan</label> 
+        <input id="text" name="text" type="text" class="form-control">
       </div>
       <div class="inputfield">
-        <input type="password" class="form-control" placeholder="Password">
+        <label for="text" class="col-4 col-form-label">Kategori</label> 
+        <select id="select" name="select" class="custom-select">
+          <option value=""></option>
+          <option value="wisata">Bus Wisata</option>
+          <option value="keluarga">Minibus Keluarga</option>
+          <option value="ekspedisi">Mobil Ekspedisi</option>
+        </select>
       </div>
-      <div class="offset col-8">
-            <button name="submit" type="submit" class="btn btn-primary btn-lg">Sign In</button><br>
-            <a href="registrasiUser.html">Registrasi User</a>
+      <div class="inputfield">
+            <label for="text" class="col-4 col-form-label">Fasilitas</label> 
+            <textarea id="textarea" name="textarea" cols="40" rows="5" class="form-control"></textarea>
+          </div>
+      <div class="offset-4 col-8">
+            <button name="submit" type="submit" class="btn btn-primary btn-lg">Submit</button>
           </div>
   </div>
   </div>
