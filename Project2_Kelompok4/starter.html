@@ -25,19 +25,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="/eCarRental-in/Project2_Kelompok4/FRONT END/FrontEnd.html" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Produk & Layanan</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Booking</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Berita</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Tentang Kami</a>
+        <a href="FrontEnd.html" class="nav-link">Home</a>
       </li>
     </ul>
 
@@ -251,7 +239,7 @@
       <div class="row">
         <div class="col-md-9">
           <h2 align="center">
-           <b>eCarRental - Admin</b>
+           <b>Admin eCarRental</b>
           </h2>
         </div>
         <div class="col-md-3">
@@ -279,115 +267,104 @@
         </div>
         <div class="col-md-8">
           <h3>
-          <b>Kelola Kendaraan</b>
+            Daftar Peminjam
           </h3> 
-          <div class="content">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-8">
-                  <form role="form">
-                      <div class="form-group row">
-                        <label for="text" class="col-4 col-form-label">Nama Kendaraan :</label> 
-                        <div class="col-8">
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-          
-                            </div> 
-                            <input id="text" name="text" type="text" class="form-control">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="select" class="col-4 col-form-label">Kategori :</label> 
-                        <div class="col-8">
-                          <select id="select" name="select" class="custom-select">
-                            <option value="bus wisata">Bus Wisata</option>
-                            <option value="avanza">Minibus Keluarga</option>
-                            <option value="sport">Sedan Eksekutif</option>
-                            <option value="sport">Mobil Ekspedisi</option>
-                          </select>
-                        </div>
-                      </div> 
-                      <div class="form-group row">
-                      </div>
-                        <div class="form-group row">
-                          <label for="textarea" class="col-4 col-form-label">Deskripsi Kendaraan :</label> 
-                          <div class="col-8">
-                            <textarea id="textarea" name="textarea" cols="40" rows="5" class="form-control"></textarea>
-                          </div>
-                        </div> 
-                        <div class="form-group row">
-                        </div>
-                      <div class="form-group row">
-                        <label class="col-4">Fasilitas Kendaraan</label> 
-                        <div class="col-8">
-                          <div class="custom-control custom-checkbox custom-control-inline">
-                            <input name="checkbox" id="checkbox_0" type="checkbox" class="custom-control-input" value="rabbit"> 
-                            <label for="checkbox_0" class="custom-control-label">Sound System</label>
-                          </div>
-                          <div class="custom-control custom-checkbox custom-control-inline">
-                            <input name="checkbox" id="checkbox_1" type="checkbox" class="custom-control-input" value="duck"> 
-                            <label for="checkbox_1" class="custom-control-label">Wifi</label>
-                          </div>
-                          <div class="custom-control custom-checkbox custom-control-inline">
-                            <input name="checkbox" id="checkbox_2" type="checkbox" class="custom-control-input" value="fish"> 
-                            <label for="checkbox_2" class="custom-control-label">TV</label>
-                          </div>
-                        </div>
-                      </div> 
-                      <div class="form-group row">
-                      </div>
-                      <div class="form-group row">
-                        <label for="text" class="col-4 col-form-label">Kapasitas :</label> 
-                        <div class="col-8">
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-          
-                            </div> 
-                            <input id="text" name="text" type="text" class="form-control">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="text" class="col-4 col-form-label">Merk Kendaraan :</label> 
-                        <div class="col-8">
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-          
-                            </div> 
-                            <input id="text" name="text" type="text" class="form-control">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                      <button type="submit" class="btn btn-primary">
-                          Simpan
-                      </button>
-                      <button type="submit" class="btn btn-success">
-                        Reset
-                    </button>
-                      </div>
-          
-                  </form>
-                  <br>
-              </div>
-          
-              </div>
-              <!-- /.row -->
-            </div><!-- /.container-fluid -->
+          <div>
+            <button type="button" class="btn btn-primary" href="Booking.html">
+              Tambah
+            </button>
           </div>
-          <!-- /.content -->
+        
+          <div class="container mt-5">
+           
+            <div class="main row justify-content-center">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <table class="table" border="1">
+                      <thead>
+                        <tr class="table-active">
+                          <th>No</th>
+                          <th>Nama</th>
+                          <th>Kontak Person</th>
+                          <th>No.HP</th>
+                          <th>Email</th>
+                          <th>Kategori</th>
+                          <th>Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                      <td>1.</td>
+                      <td>PT Arum Segar</td>
+                      <td >Puteri Diana</td>
+                      <td>0859777742</td>
+                      <td>diana123@gmail.com</td>
+                      <td>Perusahaan</td>
+                      <td>
+                        <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                        <a href="#" class="btn btn-danger btn-sm delete">Delete</a>
+                        <a href="#" class="btn btn-success btn-sm detail">Detail</a>
+                      </td>
+                        </tr>
+                        <tr class="table-active">
+                          <td>2.</td>
+                          <td></td>
+                          <td ></td>
+                          <td></td>
+                          <td ></td>
+                          <td ></td>
+                          <td class="col-3">
+                            <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                            <a href="#" class="btn btn-danger btn-sm delete">Delete</a>
+                            <a href="#" class="btn btn-success btn-sm detail">Detail</a>
+                          </td>
+                        <tr>
+                          <td>3.</td>
+                      <td></td>
+                      <td ></td>
+                      <td></td>
+                      <td ></td>
+                      <td ></td>
+                      <td class="col-3">
+                        <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                        <a href="#" class="btn btn-danger btn-sm delete">Delete</a>
+                        <a href="#" class="btn btn-success btn-sm detail">Detail</a>
+                      </td>
+                        </tr>
+                        <tr class="table-active">
+                          <td>3.</td>
+                      <td></td>
+                      <td ></td>
+                      <td></td>
+                      <td ></td>
+                      <td ></td>
+                      <td class="col-3">
+                        <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                        <a href="#" class="btn btn-danger btn-sm delete">Delete</a>
+                        <a href="#" class="btn btn-success btn-sm detail">Detail</a>
+                      </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12  mt-5">   
+              </div>
+            </div>
           </div>
+        </div>
         <div class="col-md-3">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home  »</a>
+              <a class="nav-link active" href="FrontEnd.html">Home  »</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Admin  »</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Kelola Kendaraan</a>
+              <a class="nav-link disabled" href="#">Daftar Peminjam</a>
             </li>
           </ul>
         </div>
