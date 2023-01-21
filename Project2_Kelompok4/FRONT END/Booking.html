@@ -6,6 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking Kendaraan</title>
     <link rel="stylesheet" href="items/bootstrap.min_superhero.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  .wrapp {
+        background: rgb(28, 27, 49);
+        margin: 10px auto;
+        max-width: 700px;
+        padding: 100px;
+        
+        
+      }
+  legend {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 25px;
+  }
+  
+</style>
 </head>
 <body>
 <!-- header -->	    
@@ -36,16 +54,89 @@
                         <form class="d-flex">
                           <input class="form-control me-sm-2" type="search" placeholder="Search">
                         </form>
-                        <a class="nav-link active" href="login.html">Login
+                        <a class="nav-link active" href="/eCarRental-in/Project2_Kelompok4/BACK END/login.html">Login
                             <span class="visually-hidden"></span>
                         </a>
                 </div>
             </div>
         </nav>
     </div> 
-</div>
+</div><br>
 <!--Isi Booking-->
-
+<div>
+    <form onsubmit="booking()" id="form">
+      <fieldset>
+        <legend>Booking Kendaraan</legend>
+        <div class="wrapp">
+        <div class="form-group row">
+          <label for="select" class="col-4 col-form-label">Pilih Kendaraan</label> 
+          <div class="col-7">
+            <select id="select" name="select" class="custom-select">
+              <option value="bus">Bus Wisata Bintang 5</option>
+              <option value="duck">Bus Wisata Keluarga</option>
+              <option value="fish">Bus Sinar Jaya</option>
+              <option value="fish">Bus Budiman</option>
+              <option value="fish">Bus Sudiro</option>
+              <option value="fish">Tunggal Jaya</option>
+              <option value="fish">Harapan Jaya</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="text" class="col-4 col-form-label">Nama Peminjam</label> 
+          <div class="col-7">
+            <input id="text1" name="text" type="text" class="form-control">
+          </div>
+        </div><br>
+        <div class="form-group row">
+          <label class="col-4">Kategori Peminjam</label> 
+          <div class="col-7">
+            <div class="custom-control custom-radio custom-control-inline">
+              <input name="radio" id="radio" type="radio" class="custom-control-input" value="rabbit"> 
+              <label for="radio_0" class="custom-control-label">Pribadi</label>
+              <input name="radio" id="radio1" type="radio" class="custom-control-input" value="duck"> 
+              <label for="radio_1" class="custom-control-label">Perusahaan/Organisasi</label>
+            </div>
+          </div>
+        </div><br>
+        <div class="form-group row">
+          <label for="textarea" class="col-4 col-form-label">Deskripsi Kebutuhan</label> 
+          <div class="col-7">
+            <textarea id="textarea" name="textarea" cols="40" rows="5" class="form-control"></textarea>
+          </div>
+        </div><br>
+        <div>
+            <label for="text4" class="col-4 col-form-label">Tanggal Pinjam</label> 
+            <input type="date" name="tanggal" id="date">
+            <input type="time" id="jam">
+          </div><br>
+        <div class="form-group row">
+          <label for="text1" class="col-4 col-form-label">Kontak Person</label> 
+          <div class="col-7">
+            <input id="text2" name="text1" type="text" class="form-control">
+          </div>
+        </div><br>
+        <div class="form-group row">
+          <label for="text2" class="col-4 col-form-label">Telpon/HP</label> 
+          <div class="col-7">
+            <input id="text3" name="text2" type="text" class="form-control">
+          </div>
+        </div><br>
+        <div class="form-group row">
+          <label for="text4" class="col-4 col-form-label">Email</label> 
+          <div class="col-7">
+            <input id="text3" name="text3" type="email" class="form-control">
+          </div>
+        </div> <br>
+        <div class="form-group row">
+          <div class="offset-4 col-8">
+            <button name="submit" type="submit" class="btn btn-primary" onClick="alert('Pesanan Anda Akan Segera Di Proses')">Submit</button>
+          </div>
+        </div>
+      </div>
+      </fieldset>
+      </form>
+</div>
 <!-- footer -->
 <div class="row">
     <div class="col-md-12"> 
